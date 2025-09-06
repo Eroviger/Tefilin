@@ -17,6 +17,7 @@
       return {gatingDone:false,messagesDone:false,albumDone:false};
     }
   }
+  //nose
   function saveProgress(p){
     localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
   }

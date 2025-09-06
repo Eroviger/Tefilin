@@ -59,3 +59,4 @@ document.addEventListener('DOMContentLoaded', ()=>{
   modal.onclick = e=>{ if(e.target === modal) modal.classList.remove('open'); };
   updateCounter();
 });
+//xx
