@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const gatingTexts = [
     "Hola Tefy 💖 Quise crear algo especial para tu cumpleaños...",
     "Aquí guardé pedacitos de recuerdos y mensajes que significan mucho para mí.",
-    "Cuando estés lista, entra y explora: abre cada mensaje y pasa todo el álbum. Luego verás una sorpresa final ✨"
+    "Luego verás una sorpresa final "
   ];
 
   let step = 0;
@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const finalCard = document.getElementById('final-card');
     const finalHint = document.getElementById('final-hint');
 
-    if(mStatus) mStatus.textContent = p.messagesDone ? "Listo ✓" : "Pendiente";
-    if(aStatus) aStatus.textContent = p.albumDone ? "Listo ✓" : "Pendiente";
+    if(mStatus) mStatus.textContent = p.messagesDone ? "Yap" : "Pendiente";
+    if(aStatus) aStatus.textContent = p.albumDone ? "Yap" : "Pendiente";
 
     // Evita listeners duplicados
     const clone = finalCard.cloneNode(true);
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="desc">Ver mensaje</div>
         <div class="status">Desbloqueado ✓</div>`;
       clone.addEventListener('click', ()=> location.href='final.html');
-      if(finalHint) finalHint.textContent = "¡Final desbloqueado! 🎉";
+      if(finalHint) finalHint.textContent = "Por aquiii :D";
     } else {
       clone.classList.add('locked');
       clone.addEventListener('click', ()=> alert("Completa Mensajes y Álbum para desbloquear el final."));

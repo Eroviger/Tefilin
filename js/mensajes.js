@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     { short:"4", text:"Te mereces muchas cosas lindas :3" },
     { short:"5", text:"Recuerdas cuando te viste las series que te recomende?", modalTitle:"Recuerdas cuando", modalImg:"https://picsum.photos/400/220?random=11" },
     { short:"6", text:"Alessandro te manda un beso 💋" },
-    { short:"🎁", text:"Espero que podamos ser amigos toda la vida", modalTitle:"Sorpresa", modalImg:"https://picsum.photos/400/220?random=22" }
+    { short:"🎁", text:"Espero que podamos ser amigos toda la vida <3", modalTitle:"Sorpresa", modalImg:"https://picsum.photos/400/220?random=22" }
   ];
   const grid = document.getElementById('messages-grid');
   const counter = document.getElementById('messages-counter');
