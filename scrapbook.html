@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Álbum de Recuerdos</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="css/base.css">
+<script defer src="js/progress.js"></script>
+<script defer src="js/scrapbook.js"></script>
+</head>
+<body data-page="scrapbook">
+<a href="index.html" class="back">← Menú</a>
+<h1 class="page-title">Álbum</h1>
+<div class="audio-bar">
+  <button id="play-toggle">▶</button>
+  <button id="next-song">⏭</button>
+  <span id="song-title">Sin música</span>
+</div>
+<div class="book" id="book"></div>
+<div class="nav">
+  <button id="prev" disabled>Atrás</button>
+  <button id="next">Siguiente</button>
+</div>
+<div class="indicator" id="album-indicator"></div>
+<footer class="foot">Pasa todas las páginas para desbloquear el final ✨</footer>
+<audio id="audio" preload="auto"></audio>
+</body>
+</html>

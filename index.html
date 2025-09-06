@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para Stefilin 💖</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="css/base.css">
+<script defer src="js/progress.js"></script>
+<script defer src="js/index.js"></script>
+</head>
+<body data-page="index">
+<div id="gating" class="gating">
+  <div class="gating-card">
+    <div class="gating-inner">
+      <p id="gating-text"></p>
+      <button id="gating-next">Siguiente</button>
+    </div>
+  </div>
+</div>
+
+<main id="menu" class="menu hidden">
+  <h1 class="gradient-title">Para Stefilin 💖</h1>
+  <p class="intro">
+    Espero que te guste :3
+  </p>
+  <div class="grid">
+    <a href="mensajes.html" class="card" data-lock="messages">
+      <div class="emoji">💌</div>
+      <div class="title">Mensajes</div>
+      <div class="desc">Abre todas las cajitas.</div>
+      <div class="status" id="status-messages">Pendiente</div>
+    </a>
+    <a href="scrapbook.html" class="card" data-lock="album">
+      <div class="emoji">📖</div>
+      <div class="title">Álbum</div>
+      <div class="desc">Pasa las páginas.</div>
+      <div class="status" id="status-album">Pendiente</div>
+    </a>
+    <!-- Timeline opcional (puedes añadirlo más tarde)
+    <a href="timeline.html" class="card" data-lock="timeline">
+      <div class="emoji">🕒</div>
+      <div class="title">Timeline</div>
+      <div class="desc">Nuestra historia.</div>
+      <div class="status" id="status-timeline">Opcional</div>
+    </a>
+    -->
+    <div class="card locked" id="final-card" data-final>
+      <div class="emoji">🎉</div>
+      <div class="title">Final</div>
+      <div class="desc">Completa todo.</div>
+      <div class="status" id="status-final">Bloqueado</div>
+    </div>
+  </div>
+  <p class="hint-small" id="final-hint">Completa Mensajes y Álbum para desbloquear el final.</p>
+</main>
+
+<footer class="foot">Hecho con cariño ✨</footer>
+</body>
+</html>
