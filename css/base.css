@@ -466,3 +466,59 @@ button:hover:not(:disabled) { transform:translateY(-3px); }
 .page-content h2 { margin: .1rem 0 .35rem; font-size: 1.1rem; }
 .page-content p  { margin: .15rem 0; font-size: .95rem; line-height: 1.45; overflow-wrap: anywhere; }
 /* === Overrides álbum: imagen completa visible + texto debajo === */
+@media (max-width: 560px){
+  body { padding: .8rem .6rem 2rem; }
+
+  .gradient-title, .page-title { font-size: 1.6rem; }
+  .intro, .page-intro { font-size: .9rem; margin-bottom: 1.1rem; }
+
+  /* Audio bar fija arriba y más compacta */
+  .audio-bar{
+    position: sticky;
+    top: 8px;
+    z-index: 3;
+    width: calc(100% - 1.2rem);
+    justify-content: center;
+    gap: .4rem;
+    padding: .35rem .7rem;
+    font-size: .75rem;
+  }
+
+  /* Álbum más alto y con márgenes compactos */
+  .book{ height: 78vh; }
+  .page{ border-radius: 8px; box-shadow: 0 8px 26px -16px rgba(0,0,0,.35); }
+  .page-content{ padding: .8rem; }
+
+  /* Imagen contenida sin recorte, dejando espacio para el texto */
+  .img-box{
+    min-height: 180px;
+    max-height: 60%;
+    margin-bottom: .5rem;
+  }
+  .img-box img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  .page-content h2{ font-size: 1rem; margin: .1rem 0 .3rem; }
+  .page-content p{ font-size: .9rem; line-height: 1.4; }
+
+  .nav{ gap: .5rem; margin: .25rem 0 .35rem; }
+  .nav button{ padding: .56rem 1rem; font-size: .85rem; }
+  .indicator{ font-size: .75rem; }
+
+  /* Mensajes sorpresa: grilla de 2 columnas */
+  .grid-messages{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 1rem;
+  }
+  .msg-box{ height: 120px; border-radius: 14px; }
+  .msg-box .inner{ font-size: .72rem; }
+
+  .back{ top: 8px; left: 8px; }
+  .final-name{ font-size: 2.4rem; }
+  .final-msg{ font-size: 1.2rem; }
+}

@@ -22,16 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const gatingTexts = [
-    "Hola Tefy 💖 Quise crear algo especial para tu cumpleaños...",
-    "Aquí guardé pedacitos de recuerdos y mensajes que significan mucho para mí.",
-    "Luego verás una sorpresa final "
+    "Hola Tefyyyyyyy, Queria regalarte algo bonito de cumpleaños",
+    "Espero que te guste, me demore un buen tiempo haciendolo xd",
+    "Y como estas? "
   ];
 
   let step = 0;
 
   function renderGating(){
     gatingTextEl.textContent = gatingTexts[step] || "(Texto no encontrado)";
-    gatingBtn.textContent = (step === gatingTexts.length - 1) ? "Entrar" : "Siguiente";
+    gatingBtn.textContent = (step === gatingTexts.length - 1) ? "Chao" : "Me caes mal";
     console.log("[index.js] Paso gating:", step);
   }
 
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="desc">Ver mensaje</div>
         <div class="status">Desbloqueado ✓</div>`;
       clone.addEventListener('click', ()=> location.href='final.html');
-      if(finalHint) finalHint.textContent = "Por aquiii :D";
+      if(finalHint) finalHint.textContent = "Ya la tortica 🎂";
     } else {
       clone.classList.add('locked');
       clone.addEventListener('click', ()=> alert("Completa Mensajes y Álbum para desbloquear el final."));
